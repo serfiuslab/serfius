@@ -42,3 +42,10 @@ footer {
 [lang] {
   display: none;
 }
+[lang="en"] {
+  display: none;
+}
+
+[lang="pt"] {
+  display: block;
+}
