@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grupo SERFIUS</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <script>
-    function toggleLang(lang) {
-      const all = document.querySelectorAll('[lang]');
-      all.forEach(el => el.style.display = el.getAttribute('lang') === lang ? 'block' : 'none');
-    }
-  </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    toggleLang('pt');
+  });
+
+  function toggleLang(lang) {
+    const all = document.querySelectorAll('[lang]');
+    all.forEach(el => {
+      el.style.display = (el.getAttribute('lang') === lang) ? 'block' : 'none';
+    });
+  }
+</script>
 </head>
-<body onload="toggleLang('pt')">
+<body>
   <header>
     <h1>Grupo SERFIUS</h1>
     <p lang="pt">Simulações e Estudos de Reconhecimento Físico-químico com Inovação e Uso Sustentável</p>
